@@ -12,3 +12,9 @@ jobs:
           echo "msg 1"
           echo "msg 2"
           echo "::endgroup::"
+      - name: "step 1 Env"
+        run: |
+          echo "MY_VAL=Hi boss" >> $GITHUB_ENV
+      - name: "step 2 access Env"
+        run: |
+         echo $MY_VAL
