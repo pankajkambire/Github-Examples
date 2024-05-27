@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: "group logging"
         run: |
-        echo "::group::My group message"
-        echo "msg 1"
-        echo "msg 2"
-        echo "::endgroup::"
+          echo "::group::My group message"
+          echo "msg 1"
+          echo "msg 2"
+          echo "::endgroup::"
