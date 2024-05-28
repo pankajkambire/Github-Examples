@@ -1,0 +1,15 @@
+name : "Dependent job example"
+
+on: ['push']
+
+jobs:
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: StepA
+        run: echo "boss ki jai ho"
+  job1:
+      runs-on: ubuntu-latest
+      steps:
+        - name: stepB
+          run: echo "chalo office"
